@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*{
+  box-sizing:border-box;
+  font-family: "Inter","Segoe UI",Arial,sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin:0;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 15% 10%, #eef0ff, transparent 35%),
+    radial-gradient(circle at 90% 15%, #ffeef6, transparent 35%),
+    #f6f7fb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* global page center */
+.page-center{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* main card */
+.app-card{
+  width:440px;
+  background:#ffffff;
+  border-radius:18px;
+  padding:32px 34px;
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.08),
+    0 4px 12px rgba(0,0,0,0.05);
 }
 
-.App-link {
-  color: #61dafb;
+/* headings */
+.app-title{
+  font-size:22px;
+  font-weight:700;
+  color:#111827;
+  margin-bottom:4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-subtitle{
+  font-size:14px;
+  color:#6b7280;
+  margin-bottom:22px;
+}
+
+/* form */
+.form-field{
+  margin-bottom:16px;
+}
+
+.app-input{
+  width:100%;
+  padding:13px 14px;
+  border-radius:10px;
+  border:1px solid #e5e7eb;
+  font-size:14px;
+  outline:none;
+  transition:0.15s;
+  background:#fafafa;
+}
+
+.app-input:focus{
+  border-color:#6366f1;
+  background:#ffffff;
+  box-shadow:0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* button */
+.app-btn{
+  width:100%;
+  padding:13px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(135deg,#6366f1,#8b5cf6);
+  color:white;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.15s;
+}
+
+.app-btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 25px rgba(99,102,241,0.35);
+}
+
+/* links */
+.app-link{
+  color:#6366f1;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+}
+
+/* dashboard */
+.dashboard-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:18px;
+}
+
+.task-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.task-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 14px;
+  background:#f9fafb;
+  border-radius:12px;
+  font-size:14px;
+  color:#1f2937;
+  transition:0.15s;
+}
+
+.task-item:hover{
+  background:#eef0ff;
+}
+
+.empty-text{
+  text-align:center;
+  font-size:14px;
+  color:#6b7280;
+  padding:16px 0;
+}
+
+/* small footer text */
+.center-footer{
+  margin-top:18px;
+  text-align:center;
+  font-size:14px;
+  color:#6b7280;
 }

@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
@@ -13,8 +12,8 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/add-task" element={<AddTask />} />
-        <Route path="/edit-task/:id" element={<EditTask />} />
+        <Route path="/add" element={<AddTask />} />
+        <Route path="/edit/:id" element={<EditTask />} />
       </Routes>
     </BrowserRouter>
   );
