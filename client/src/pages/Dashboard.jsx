@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { useTask } from "../context/TaskContext";
 
 export default function Dashboard(){
-
-  // ✅ Hook must be called ONLY here
+  
   const { tasks, removeTask } = useTask();
 
   return(

@@ -27,13 +27,11 @@ export function TaskProvider({ children }) {
     );
   };
 
-  // ✅ ADD THIS FUNCTION
   const removeTask = (id) => {
     setTasks(tasks.filter(t => t.id !== id));
   };
 
   return (
-    // ✅ add removeTask here also
     <TaskContext.Provider value={{ tasks, addTask, updateTask, removeTask }}>
       {children}
     </TaskContext.Provider>
