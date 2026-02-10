@@ -15,7 +15,7 @@ export default function Login() {
     <div className="page-center">
       <form className="app-card" onSubmit={handleLogin}>
 
-        <div className="app-title">Welcome back</div>
+        <div className="app-title">Welcome back!</div>
         <div className="app-subtitle">
           Sign in to your workspace
         </div>
